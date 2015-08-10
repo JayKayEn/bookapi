@@ -16,7 +16,7 @@ class Book(models.Model):
     summary = models.TextField()
     price = models.DecimalField(decimal_places=2, max_digits=10)
     link = models.URLField(max_length=1024)
-    cover_image = models.ImageField(max_length=None)
+    cover_image = models.URLField(max_length=1024)
 
     def __str__(self):
         return self.title
